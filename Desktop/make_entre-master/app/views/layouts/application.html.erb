@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Make Entre</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div id="logo"><%= link_to "Make Entre", root_path %></div>
+      <% if user_signed_in? %>
+        <ul class="header-right">
+          <li><%= link_to "ユーザー一覧", users_path %></li>
+          <li><%= link_to "イベント一覧", events_path %></li>
+          <li><%= link_to current_user.email, current_user %></li>
+          <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+        </ul>
+      <% else %>
+        <ul class="header-right">
+          <li><%= link_to "概要", about_path %></li>
+          <li><%= link_to "新規登録", new_user_registration_path %></li>
+          <li><%= link_to "ログイン", new_user_session_path %></li>
+        </ul>
+      <% end %>
+    </div>
+  </header>
+  
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+
+  <% if !current_page?(root_path) %><div class="adjust-container"></div><% end %>
+  <%= yield %>
+
+  <% if !current_page?(events_path) && !current_page?(root_path) %>
+    <div class="container">
+      <footer class="footer">
+        <div class="small">
+          &copy; 2015 Make Entre, Inc.
+        </div>
+      </footer>
+    </div>
+  <% end %>
+</body>
+</html>

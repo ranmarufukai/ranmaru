@@ -1,0 +1,146 @@
+// Place all the styles related to the Events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.events {
+	.events-show{
+	  width:100%;
+	  padding: 50px 0 50px 0;
+		/*background-image:url(images/back.jpg);
+		background-repeat: no-repeat;
+		background-position: center;*/
+	}
+
+	.photo{
+	  width:100%;
+	  margin: 0 auto;
+	}
+
+	img{
+	  width:800px;
+	  margin: 0 auto;
+	}
+
+
+	/*member------------*/
+
+	.hero-spacer {
+	    margin-top: 50px;
+	}
+
+	.hero-feature {
+	    margin-bottom: 30px;
+	}
+
+
+	/* ------------------------------------------------------------------------------
+		 Testimonials
+	-------------------------------------------------------------------------------*/
+	.testimonials {
+		background-color: #e84545;
+		position: relative;
+		text-align: center;
+	}
+	.testimonials blockquote {
+		border: 0;
+		margin: 0;
+		padding: 100px 15%;
+	}
+	.testimonials h1 {
+		color: #fff;
+		font: 23px "Source Sans Pro";
+		font-weight: 300;
+	}
+	.testimonials p {
+		color: #fff;
+		display: block;
+		font-size: 13px;
+		font-style: normal;
+		letter-spacing: 2px;
+		font-weight: 400;
+		margin-top: 30px;
+		text-transform: uppercase;
+	}
+
+	.tin{
+	width:150px;
+	height: 150px;
+	float:left;
+	}
+
+	/* ------------------------------------------------------------------------------
+		 Footer
+	-------------------------------------------------------------------------------*/
+	.footer {
+		text-align: left;
+	}
+	.footer-top {
+		background-color: #181818;
+		padding-top: 50px;
+	}
+	.footer-bottom {
+		background-color: #313454;
+		padding: 20px 0;
+	}
+	.footer .footer-col {
+		margin-bottom: 80px;
+	}
+	.footer h5 {
+		color: #fff;
+	}
+	.footer h5 {
+		margin-bottom: 20px;
+	}
+	.footer p {
+		color: rgba(255, 255, 255, 0.25);
+	}
+	.footer a {
+		color: rgba(255, 255, 255, 0.50);
+	}
+	.footer a:hover {
+		color: #e84545;
+	}
+	.footer .footer-share {
+		margin-top: 0;
+	}
+	.footer .footer-share li {
+		display: inline-block;
+		float: none;
+	}
+	.footer .footer-share a {
+		border: none;
+		font-size: 21px;
+		color: rgba(255, 255, 255, 0.25);
+	}
+	.footer .fa-heart {
+		color: #e84545;
+		font-size: 11px;
+		margin: 0 2px;
+	}
+
+	.swiper-container {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+}
